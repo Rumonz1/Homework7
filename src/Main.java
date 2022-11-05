@@ -33,13 +33,13 @@ public class Main {
         int contributionVasily = 15000;
         int extraContibution = contributionVasily / 100 * 7;
         int month = 0;
-        while (contributionVasily <= 12_000_000) {
+        while (month <108) {
             month = month + 1;
             contributionVasily = extraContibution * month + contributionVasily;
             if (month % 6 ==0){
             System.out.println("Месяц "+month+" ,сумма накоплений: "+contributionVasily);}
         }
-        System.out.println(month+" месяцев потребуется, чтобы накопить нужную сумму!");
+        System.out.println("Через "+month+" месяцев ,будет накоплено "+contributionVasily);
         //
     }
 }
