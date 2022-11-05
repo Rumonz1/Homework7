@@ -29,5 +29,16 @@ public class Main {
             population = fertilityYear + population - mortalityYear;
             System.out.println("Год "+j+" численность населения составляет "+population);
         }
+        //Задание 1.2
+        int contributionVasily = 15000;
+        int extraContibution = contributionVasily / 100 * 7;
+        int month = 0;
+        while (contributionVasily <= 12_000_000) {
+            month = month + 1;
+            contributionVasily = extraContibution * month + contributionVasily;
+            System.out.println("Месяц "+month+" ,сумма накоплений: "+contributionVasily);
+        }
+        System.out.println(month+" месяцев потребуется, чтобы накопить нужную сумму!");
+        //
     }
 }
