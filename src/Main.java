@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         //Задание 1
@@ -41,5 +43,12 @@ public class Main {
         }
         System.out.println("Через "+month+" месяцев ,будет накоплено "+contributionVasily);
         //
+        //Задание 1.4
+        int day = 0;
+        while (day < 31) {
+            day++;
+            if (day % 7== 0) {
+            System.out.println("Сегодня пятница "+day+"-е число. Необходимо подготовить отчёт!");}
+        }
     }
 }
