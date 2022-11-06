@@ -26,9 +26,10 @@ public class Main {
         //Задание 3
         int population = 12_000_000;
         int fertilityYear = population / 1000 * 17;
-        int mortalityYear = 8;
+        int mortalityYear = population / 1000 * 8;
+        int difference = fertilityYear - mortalityYear;
         for (int j = 1; j <= 10; j++) {
-            population = fertilityYear + population - mortalityYear;
+            population = population + difference * j;
             System.out.println("Год "+j+" численность населения составляет "+population);
         }
         //Задание 1.2
@@ -51,7 +52,14 @@ public class Main {
             System.out.println("Сегодня пятница "+day+"-е число. Необходимо подготовить отчёт!");}
         }
         //Задание 1 третьей части
-        //не понял как решать
+        int year = 2022;
+        int nextYearPeriod = year + 100;
+        int prevYearPeriod = year - 200;
+        for (int v = 0; v <nextYearPeriod; v=v+79) {
+            if (v > prevYearPeriod) {
+                System.out.println(v);
+            }
+        }
         //Задание 2 третьей части
         for (int x = 1; x <= 10; x++) {
             int y = x*2;
