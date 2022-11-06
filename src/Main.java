@@ -33,15 +33,15 @@ public class Main {
         }
         //Задание 1.2
         int contributionVasily = 15000;
-        int extraContibution = contributionVasily / 100 * 7;
+        int extraContribution = contributionVasily / 100 * 7;
         int month = 0;
         while (month <108) {
             month = month + 1;
-            contributionVasily = extraContibution * month + contributionVasily;
+            contributionVasily = extraContribution * month + contributionVasily;
             if (month % 6 ==0){
             System.out.println("Месяц "+month+" ,сумма накоплений: "+contributionVasily);}
+            System.out.println("Через "+month+" месяцев ,будет накоплено "+contributionVasily);
         }
-        System.out.println("Через "+month+" месяцев ,будет накоплено "+contributionVasily);
         //
         //Задание 1.4
         int day = 0;
@@ -49,6 +49,13 @@ public class Main {
             day++;
             if (day % 7== 0) {
             System.out.println("Сегодня пятница "+day+"-е число. Необходимо подготовить отчёт!");}
+        }
+        //Задание 1 третьей части
+        //не понял как решать
+        //Задание 2 третьей части
+        for (int x = 1; x <= 10; x++) {
+            int y = x*2;
+            System.out.println("2*"+x+"="+y);
         }
     }
 }
