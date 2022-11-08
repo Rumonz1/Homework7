@@ -25,10 +25,13 @@ public class Main {
         System.out.println();
         //Задание 3
         int population = 12_000_000;
-        int fertilityYear = population / 1000 * 17;
-        int mortalityYear = population / 1000 * 8;
-        int difference = fertilityYear - mortalityYear;
+        int fertilityYear;
+        int mortalityYear;
+        int difference;
         for (int j = 1; j <= 10; j++) {
+            fertilityYear = population / 1000 * 17;
+            mortalityYear = population / 1000 * 8;
+            difference = fertilityYear - mortalityYear;
             population = population + difference * j;
             System.out.println("Год "+j+" численность населения составляет "+population);
         }
